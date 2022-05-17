@@ -10,15 +10,12 @@ class Program{
         {
             Console.WriteLine("1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir");
             aux = Convert.ToInt32(Console.Read());
-            Console.Clear();
             
             Console.WriteLine("Ingresar el primer numero: ");
             int x = Convert.ToInt32(Console.ReadLine());
-            Console.Clear();
 
             Console.WriteLine("Ingresar el segundo numero: ");
             int y = Convert.ToInt32(Console.ReadLine());
-            Console.Clear();
 
             switch (aux)
             {
