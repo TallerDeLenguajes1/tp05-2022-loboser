@@ -1,4 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System;
+
+// See https://aka.ms/new-console-template for more information
 namespace tp05
 {
     class Program
@@ -11,13 +13,15 @@ namespace tp05
             while (bandera == 0)
             {
                 Console.WriteLine("1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir");
-                aux = Convert.ToInt32(Console.Read());
+                aux = Convert.ToInt32(Console.ReadLine());
                         
                 Console.WriteLine("Ingresar el primer numero: ");
-                int x = Convert.ToInt32(Console.Read()); 
+                int x;
+                x = Convert.ToInt32(Console.ReadLine()); 
 
                 Console.WriteLine("Ingresar el segundo numero: ");
-                int y = Convert.ToInt32(Console.Read());
+                int y;
+                y = Convert.ToInt32(Console.ReadLine());
 
                 switch (aux)
                 {
@@ -36,7 +40,7 @@ namespace tp05
                 }
 
                 Console.WriteLine("Desea realizar otro calculo? (1 = Si)");
-                int i = Console.Read();
+                int i = Convert.ToInt32(Console.ReadLine());
                 if(i != 1){
                     bandera++;
                 }
