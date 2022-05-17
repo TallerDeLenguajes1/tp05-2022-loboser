@@ -1,9 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using System;
+
 class Program{
     static void Main(){
         int bandera = 0;
-        int operacion;
         int aux = 0;
 
         while (bandera == 0)
@@ -20,16 +21,16 @@ class Program{
             switch (aux)
             {
                 case 1:
-                    operacion = x + y;
+                    Console.WriteLine(x + y);
                     break;
                 case 2:
-                    operacion = x - y;
+                    Console.WriteLine(x - y);
                     break;
                 case 3:
-                    operacion = x * y;
+                    Console.WriteLine(x * y);
                     break;
                 case 4:
-                    operacion = x / y;
+                    Console.WriteLine(x / y);
                     break;
             }
         }
