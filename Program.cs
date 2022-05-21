@@ -8,19 +8,19 @@ namespace tp05
         static void Main(string[] args)
         {
             int bandera = 0;
-            int aux = 0;
+            int aux = 0;    
+            int x;
+            int y;
 
             while (bandera == 0)
             {
                 Console.WriteLine("1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir");
                 aux = Convert.ToInt32(Console.ReadLine());
-                        
+
                 Console.WriteLine("Ingresar el primer numero: ");
-                int x;
                 x = Convert.ToInt32(Console.ReadLine()); 
 
                 Console.WriteLine("Ingresar el segundo numero: ");
-                int y;
                 y = Convert.ToInt32(Console.ReadLine());
 
                 switch (aux)
@@ -38,6 +38,29 @@ namespace tp05
                         Console.WriteLine(x / y);
                         break;
                 }
+
+                double num;
+                Console.WriteLine("Ingresar un Numero: ");
+                num = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine($"Valor Abosoluto: {Math.Abs(num)}" );
+                Console.WriteLine($"Al Cuadrado: {Math.Pow(num,2)}" );
+                Console.WriteLine($"Raiz Cuadrada: {Math.Sqrt(num)}" );
+                Console.WriteLine($"Seno: {Math.Sin(num)}" );
+                Console.WriteLine($"Coseno: {Math.Cos(num)}" );
+                Console.WriteLine($"Parte Entera: {Math.Truncate(num)}\n" );
+
+
+                Console.WriteLine("Ingresar el primer numero: ");
+                x = Convert.ToInt32(Console.ReadLine()); 
+
+                Console.WriteLine("Ingresar el segundo numero: ");
+                y = Convert.ToInt32(Console.ReadLine());
+                
+
+                Console.WriteLine($"\nNumero Maximo: {Math.Max(x,y)}\n" );
+                Console.WriteLine($"Numero Minimo: {Math.Min(x,y)}\n" );
+                
 
                 Console.WriteLine("Desea realizar otro calculo? (1 = Si)");
                 int i = Convert.ToInt32(Console.ReadLine());

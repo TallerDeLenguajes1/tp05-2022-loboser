@@ -1,9 +1,12 @@
 
 .vscode/
 *.exe
+*.json
+
 
 # Created by https://www.toptal.com/developers/gitignore/api/csharp,dotnetcore,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=csharp,dotnetcore,visualstudiocode
+
 
 ### Csharp ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -411,6 +414,17 @@ obj/
 # Common node modules locations
 /node_modules
 /wwwroot/node_modules
+### Executable ###
+*.app
+*.bat
+*.cgi
+*.com
+*.exe
+*.gadget
+*.jar
+*.pif
+*.vb
+*.wsf
 
 ### VisualStudioCode ###
 !.vscode/*.code-snippets
@@ -430,4 +444,8 @@ obj/
 
 # Ignore code-workspaces
 
+<<<<<<< HEAD
 # End of https://www.toptal.com/developers/gitignore/api/csharp,dotnetcore,visualstudiocode
+=======
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,csharp,executable
+>>>>>>> CalculadoraV2
