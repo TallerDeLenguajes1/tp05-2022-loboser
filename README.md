@@ -1,6 +1,7 @@
 # tp05-2022-loboser
 
 ### Ejercicio 4:
+
 * **¿String es un tipo por valor o un tipo por referencia?**
 
 El tipo string representa una secuencia de cero o más caracteres Unicode. string es un alias de System.String en .NET.
@@ -45,6 +46,8 @@ Toma el simbolo y no utiliza secuencias de escape.
 
 ### Ejercicio 5:
 
+* **Busque en diferentes bibliografías que son y cómo funcionan las expresiones regulares.**
+
 * **¿Funcionan únicamente en C#?**
 
 No, tambien funcionan en C++, Python, Java, Javascript, PHP, entre otros.
@@ -56,3 +59,7 @@ Nos permite verificar algo de forma automatica, para confirmar una parte de vali
 Filtrar textos
 
 Buscar en textos
+
+* **¿Cómo se hace uso de estas en C#?**
+
+Se utiliza mediante la libreria System.Text.RegularExpressions
