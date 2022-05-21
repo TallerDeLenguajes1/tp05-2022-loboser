@@ -35,7 +35,12 @@ namespace tp05
                         Console.WriteLine(x * y);
                         break;
                     case 4:
-                        Console.WriteLine(x / y);
+                        if(y!=0){
+                            Console.WriteLine(x / y);
+                        }else
+                        {
+                            Console.WriteLine("No se puede dividir entre 0");
+                        }
                         break;
                 }
 
