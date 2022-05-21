@@ -62,4 +62,4 @@ Buscar en textos
 
 * **¿Cómo se hace uso de estas en C#?**
 
-Se utiliza mediante la libreria System.Text.RegularExpressions
+Se utiliza mediante la libreria System.Text.RegularExpressions mediante la clase Regex
