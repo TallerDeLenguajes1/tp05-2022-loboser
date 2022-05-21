@@ -1,30 +1,40 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
+using System.Text.RegularExpressions;
 namespace tp05
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int numero, inverso = 0;
+            string cadena;
 
-			Console.WriteLine("Ingrese un numero: ");
-			numero = Convert.ToInt32(Console.ReadLine());
+			Regex web = new Regex(@"https?://\w+(\.\w+)*(\.\w{2,4})");
+			Regex email = new Regex(@"(\w+\.?\w*)+(\@\w+)(\.\w{2,4})+");
 
-			if (numero > 0)
+			Console.WriteLine("Ingrese un link: ");
+			cadena = Console.ReadLine();
+
+			if (web.IsMatch(cadena))
 			{
-				while (numero > 0)
-				{
-					inverso = inverso * 10 + numero % 10;
-					numero = numero / 10;
-				}
+				Console.WriteLine("\nEl link \"" + cadena + "\" es valido");
 			}
 			else
 			{
-				inverso = numero;
+				Console.WriteLine("\nEl link \"" + cadena + "\" es invalido");
 			}
 
-			Console.WriteLine("Numero invertido: " + inverso);
+			Console.WriteLine("\nIngrese un email: ");
+			cadena = Console.ReadLine();
+
+			if (email.IsMatch(cadena))
+			{
+				Console.WriteLine("\nEl Mail \"" + cadena + "\" es valido");
+			}
+			else
+			{
+				Console.WriteLine("\nEl Mail \"" + cadena + "\" es invalido");
+			}
         }
     }
 }
