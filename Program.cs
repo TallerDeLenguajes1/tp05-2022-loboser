@@ -9,8 +9,8 @@ namespace tp05
         {
             string cadena;
 
-			Regex web = new Regex(@"https?://\w+(\.\w+)*(\.\w{2,4})");
-			Regex email = new Regex(@"(\w+\.?\w*)+(\@\w+)(\.\w{2,4})+");
+			Regex web = new Regex(@"(https?:\/\/)?(www\.)[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)|(https?:\/\/)?(www\.)?(?!ww)[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)");
+			Regex email = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
 
 			Console.WriteLine("Ingrese un link: ");
 			cadena = Console.ReadLine();
